@@ -1,0 +1,176 @@
+
+*:not(i):not(select):not('.select2') {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #111;
+    line-height: 1.5;
+}
+
+p, li {
+    font-size: 16px;
+}
+p {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+
+
+
+/* Typography */
+/* Format and Alignment */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+.sidebar-container {
+    margin: 15px 0;
+}
+
+input#searchsubmit {
+    background: white;
+    border: 1px solid #337ab7;
+    color: #337ab7;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+input#s {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.sticky {
+    background: #eee;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 0 15px;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.aligncenter {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.post-thumbnail {
+    text-align: center;
+}
+
+.attachment-post-thumbnail {
+    margin: 10px auto;
+}
+
+.wp-caption-text, .gallery-caption {
+    font-size: 0.9em;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.entry-content .wp-caption, .gallery-caption {
+    max-width: 100%;
+}
+
+.entry-content {
+    word-wrap: break-word;
+}
+
+abbr, acronym {
+    cursor: help;
+    border-bottom: 1px dotted #777;
+}
+
+td, th {
+    padding: 5px 10px 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+blockquote {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+}
+
+blockquote p {
+    font-size: 20px;
+    font-weight: normal;
+    display: inline;
+}
+
+blockquote:before {
+    font-family: FontAwesome;
+    color: #ddd;
+    content: ' \f10d';
+    font-size: 2em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.2em;
+}
+
+cite p {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.post-title > a:hover, .entry-title > :hover {
+    text-decoration: none;
+}
+
+.bypostauthor {
+    background: #eee;
+    border-left: 3px solid #337ab7;
+}
+
+/** Pagination **/
+.page-numbers {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 2px 0 0;
+    border: 1px solid #eee;
+    line-height: 1;
+    text-decoration: none;
+    border-radius: 2px;
+    font-weight: 600;
+}
+.page-numbers.current,
+a.page-numbers:hover {
+    background: #f9f9f9;
+}
+.pagination {
+    width: 100%;
+    text-align: right;
+}
+
+.pagination h2 {
+    display: none;
+}

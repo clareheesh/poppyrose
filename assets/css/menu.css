@@ -1,0 +1,223 @@
+/**
+*
+*  Responsive navigation menu that supports up to three levels of navigation
+*
+**/
+
+
+/***********************************
+ Left aligned menu
+***********************************/
+
+/***********************************
+ Right aligned menu
+***********************************/
+
+/***********************************
+ Evenly spaced menu
+***********************************/
+
+/*@media (min-width:830px) {
+    #sf-navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+#sf-menu #sf-navigation:before, #sf-menu #sf-navigation:after {
+    content: none;
+}*/
+
+
+
+nav {
+    /* Colour */
+}
+
+#sf-menu a:hover, #sf-menu .current-menu-item > a, #sf-menu .current-menu-parent > a, #sf-menu .current-menu-ancestor > a{
+    /* Colour */
+    color: #fff;
+}
+
+.show {
+    display: block;
+}
+
+#sf-menu {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+}
+
+#sf-navigation {
+    float: right;
+}
+
+#sf-menu ul,
+div.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#sf-menu li,
+div.menu li {
+    float: left;
+    position: relative;
+}
+
+#sf-menu li,
+div.menu li {
+    float: left;
+    position: relative;
+    font-family: "proxima-nova", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+
+    text-align: center;
+}
+
+#sf-menu, #sf-navigation {
+    transition: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+}
+
+#sf-menu a {
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #bbb;
+}
+
+#sf-menu a:hover, #sf-menu a:focus, #sf-menu a:active {
+    color: #fff;
+}
+
+.menu-item-has-children> a::after{
+    content: ' \f0d7'; /* Caret */
+    /* content: ' \f107'; /* Arrow */
+    font-family: FontAwesome, sans-serif;
+}
+
+#sf-menu ul ul {
+    display: none;
+}
+
+#sf-menu ul ul li {
+    width: 100%;
+    white-space: nowrap;
+    text-align: left;
+}
+
+#sf-menu ul ul a {
+    padding: 0 10px;
+    height: auto;
+}
+
+.navbar {
+    min-height: 0;
+}
+
+.responsive-menu {
+    display: none;
+    /*padding: 10px;*/
+}
+
+.responsive-menu a {
+    width: 100%;
+}
+
+.responsive-menu a:hover,
+.responsive-menu a:active,
+.responsive-menu a:focus {
+    text-decoration: none;
+}
+
+/* View is larger than mobile */
+/*@media (min-width: 1200px) {*/
+    #sf-menu ul li:hover > ul {
+        display: block;
+    }
+
+    .menu-item-has-children ul .menu-item-has-children > a::after{
+        content: ' \f0da'; /* Caret */
+        /*content: ' \f105'; !* Arrow */
+        font-family: FontAwesome, sans-serif;
+        position: absolute;
+        right: 10px;
+    }
+
+    #sf-menu ul ul {
+        position: absolute;
+        /* Heigt of Parent ul */
+        top: 70px;
+        left: 20px;
+        float: left;
+        width: auto;
+        z-index: 99999;
+        /* Colour */
+        background: #272727;
+    }
+
+    #sf-menu ul ul ul {
+        left: 240px;
+        top: -1px;
+    }
+/*}*/
+
+/* View is mobile */
+@media (max-width: 1200px) {
+
+    #sf-menu {
+        /*display: none;*/
+        /*height: auto;*/
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+
+    #sf-menu li {
+        /*width: 100%;*/
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    #sf-navigation {
+        /*width: 100%;*/
+        /*background: #eee;*/
+        /*overflow: auto;*/
+    }
+
+    .container-header {
+        width: 100%;
+    }
+
+    #sf-menu ul ul li:first-child {
+        /* Colour */
+        padding-top: 15px;
+
+    }
+    #sf-menu ul ul li:last-child {
+        /* Colour */
+        padding-bottom: 0px;
+    }
+
+    #sf-menu ul ul {
+        padding-left: 10px;
+    }
+
+    #sf-menu ul ul ul {
+        padding-left: 20px;
+    }
+
+    #sf-menu ul ul a {
+        width: 100%;
+    }
+
+}
